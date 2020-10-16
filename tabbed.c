@@ -681,7 +681,7 @@ killclient(const Arg *arg)
 {
 	XEvent ev;
 
-	if (sel < 0)
+	if (nclients < 2)
 		return;
 
 	if (isprotodel(sel) && !clients[sel]->closed) {
