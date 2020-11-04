@@ -680,10 +680,6 @@ void
 killclient(const Arg *arg)
 {
 	XEvent ev;
-
-	if (nclients < 2)
-		return;
-
 	if (isprotodel(sel) && !clients[sel]->closed) {
 		ev.type = ClientMessage;
 		ev.xclient.window = clients[sel]->win;
@@ -696,6 +692,11 @@ killclient(const Arg *arg)
 	} else {
 		XKillClient(dpy, clients[sel]->win);
 	}
+
+	if (nclients == 1){
+    Arg a = { 0 };
+    spawn( &a );
+  }
 }
 
 void
