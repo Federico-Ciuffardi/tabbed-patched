@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#2d3031";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#1068b0";
+static const char* normbgcolor  = "#2D3031";
+static const char* normfgcolor  = "#ffffff";
+static const char* selbgcolor   = "#34495e";
 static const char* selfgcolor   = "#ffffff";
 static const char* urgbgcolor   = "#111111";
 static const char* urgfgcolor   = "#cc0000";
